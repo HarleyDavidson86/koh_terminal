@@ -1,9 +1,3 @@
-<?php if (empty($content)): ?>
-	<div class="mt-4">
-	<?php $language->p('No pages found') ?>
-	</div>
-<?php endif ?>
-
 <div class="container mt-4"> <!-- Content Container HOME -->
         <div class="row">
 		<div class="col-md-4">
@@ -27,6 +21,11 @@
 		</div>
 
         <div class="col-md-8">
+		<?php if (empty($content)): ?>
+			<div class="my-5">
+			<p class="text-center"><?php $language->p('No pages found') ?></p>
+			</div>
+		<?php endif ?>
 			<!-- Post -->
 			<?php foreach ($content as $page): ?>
 
