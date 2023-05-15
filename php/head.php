@@ -12,6 +12,7 @@
 <?php echo Theme::favicon('img/favicon.png'); ?>
 
 <!-- Include CSS Styles from this theme -->
+<?php echo Theme::css('css/fonts.css'); ?>
 <?php echo Theme::css('css/bootstrap.min.css'); ?>
 <?php echo Theme::css('css/style.css'); ?>
 
