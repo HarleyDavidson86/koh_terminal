@@ -22,16 +22,21 @@ hr {
 }
 
 #logo {
-    border-right: solid 3px rgba(0,255,0,.75);
-    white-space: nowrap;
     overflow: hidden;    
     font-family: 'Source Code Pro', monospace;  
 }
 
-/* Animation */
-#logo {
-    animation: animated-text 2s steps(23,end) 1s 1 normal both,
-                animated-cursor 600ms steps(23,end) infinite;
+@media (min-width: 400px) {   
+    /* Animation */
+    #logo {
+        animation: animated-text 2s steps(23,end) 1s 1 normal both,
+                    animated-cursor 600ms steps(23,end) infinite;
+    }
+
+    #logo {
+        border-right: solid 3px rgba(0,255,0,.75);
+        white-space: nowrap;
+    }
 }
 
 /* text animation */
